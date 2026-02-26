@@ -1,6 +1,6 @@
 {
   "latest_version": "1.0.1",
-  "patch_url": "https://github.com/Trehive/stusync-patches/raw/refs/heads/main/stusync.patch",
-  "changelog": "• Added Hardware ID security lock\n• Added new Attendance Screen\n• Fixed login lag on Windows 11",
-  "critical": false
+  "patch_url": "https://github.com/Trehive/stusync-patches/raw/refs/heads/main/v1.0.1+2%20beta.zip",
+  "changelog": "• New Patch.. log and hardare issue fixed",
+  "critical": true
 }
