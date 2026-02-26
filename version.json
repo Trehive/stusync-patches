@@ -1,6 +1,6 @@
 {
   "latest_version": "1.0.1",
-  "patch_url": "https://github.com/Trehive/stusync-patches/raw/refs/heads/main/v1.0.1+2%20beta.zip",
+  "patch_url": "https://github.com/Trehive/stusync-patches/raw/refs/heads/main/stusync_v101_beta.zip",
   "changelog": "• New Patch.. log and hardare issue fixed",
   "critical": true
 }
