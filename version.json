@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.0.4",
-  "patch_url": "https://github.com/Trehive/stusync-patches/raw/refs/heads/main/beta_1.0.4+4.zip",
-  "changelog": "• New Patch..layout, class filter in gradings, system updates and some minor issues fixed",
+  "latest_version": "1.1.0",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/v1.1.0/beta_V1.1.0+5.zip",
+  "changelog": "🚀 MAJOR UPDATE: Added Live CCTV Monitoring & Secondary Dashboard. Improved grading filters, layout refinements, and critical system sync updates.",
   "critical": true
 }
