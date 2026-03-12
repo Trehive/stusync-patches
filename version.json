@@ -1,5 +1,5 @@
 {
-  "latest_version": "beta_1.0.4+4",
+  "latest_version": "1.0.4",
   "patch_url": "https://github.com/Trehive/stusync-patches/raw/refs/heads/main/beta_1.0.4+4.zip",
   "changelog": "• New Patch..layout, class filter in gradings, system updates and some minor issues fixed",
   "critical": true
