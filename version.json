@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.1.0",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/v1.1.0/beta_V1.1.0+5.zip",
-  "changelog": "🚀 MAJOR UPDATE: Added Live CCTV Monitoring & Secondary Dashboard. Improved grading filters, layout refinements, and critical system sync updates.",
+  "latest_version": "1.1.1",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/v1.1.1%2B6/beta_v1.1.1+6.zip",
+  "changelog": "🚀 MAJOR UPDATE: Fixed CCTV guessing patch.",
   "critical": true
 }
