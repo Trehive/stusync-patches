@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.1.1",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/v1.1.1%2B6/beta_v1.1.1+6.zip",
-  "changelog": "🚀 MAJOR UPDATE: Fixed CCTV guessing patch.",
+  "latest_version": "1.1.2",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.1.2%2B7/beta_v1.1.2+7.zip",
+  "changelog": "🚀 MAJOR UPDATE: added gps and fixed some bugs and loading screen.",
   "critical": true
 }
