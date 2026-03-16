@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.1.5",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.1.5%2B10/beta_v1.1.5+10.zip",
-  "changelog": "🛡️ Data Integrity Update: Implemented Natural Academic Sorting across all modules, added Unique Constraints for duplicate prevention, and introduced Smart Sync Comparison.",
+  "latest_version": "1.1.6",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.1.6%2B11/beta_v1.1.6+11.zip",
+  "changelog": "💸 Payroll & Vision Update: Fixed LWP/PL salary deductions across Staff Ledger and Income & Expenditure — both screens now show consistent salary figures. Rebuilt I&E screen with KPI cards, charts, and a new Salary Detail pane. Added CCTV Quick Connect wizard — enter DVR IP and the app auto-detects brand, path, and channels automatically.",
   "critical": true
 }
