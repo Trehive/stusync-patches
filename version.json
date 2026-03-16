@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.1.4",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.1.4%2B9/beta_v1.1.4+9.zip",
+  "latest_version": "1.1.5",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.1.5%2B10/beta_v1.1.5+10.zip",
   "changelog": "🛡️ Data Integrity Update: Implemented Natural Academic Sorting across all modules, added Unique Constraints for duplicate prevention, and introduced Smart Sync Comparison.",
   "critical": true
 }
