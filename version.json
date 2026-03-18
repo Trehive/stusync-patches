@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.1.6",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.1.6%2B11/beta_v1.1.6+11.zip",
-  "changelog": "💸 Payroll & Vision Update: Fixed LWP/PL salary deductions across Staff Ledger and Income & Expenditure — both screens now show consistent salary figures. Rebuilt I&E screen with KPI cards, charts, and a new Salary Detail pane. Added CCTV Quick Connect wizard — enter DVR IP and the app auto-detects brand, path, and channels automatically.",
+  "latest_version": "1.2.0",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.2.0%2B12/beta_v1.2.0+12.zip",
+  "changelog": "🎓 Identity & Intelligence Update: Added 5 CC, 4 TC, and 9 Marksheet custom templates with live preview before printing. New Template Picker Modal and per-school template preference saving. Fixed 4 silent dashboard chart failures (Fee by Category, Expense by Category, Grade Avg Score, Subject Avg Score) — all now populate correctly from existing data. Added branded desktop splash screen with Lottie animation, CRT-style flicker, and smart parallel DB check. New database tables for template settings and document audit log with full Supabase sync support.",
   "critical": true
 }
