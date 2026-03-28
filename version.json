@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.2.1",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.2.1%2B13/beta_v1.2.1+13.zip",
+  "latest_version": "1.2.2",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/beta_v1.2.2%2B14/1.1.2.zip",
   "changelog": "🎓 Identity & Intelligence Update: Added 5 CC, 4 TC, and 9 Marksheet custom templates with live preview before printing. New Template Picker Modal and per-school template preference saving. Fixed 4 silent dashboard chart failures (Fee by Category, Expense by Category, Grade Avg Score, Subject Avg Score) — all now populate correctly from existing data. Added branded desktop splash screen with Lottie animation, CRT-style flicker, and smart parallel DB check. New database tables for template settings and document audit log with full Supabase sync support.",
   "critical": true
 }
