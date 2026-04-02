@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Trehive/stusync-patches/main/assets/logo.png" alt="StuSync Logo" width="80"/>
+<img src="https://raw.githubusercontent.com/Trehive/stusync-patches/main/assets/screenshots/logo.png" alt="StuSync Logo" width="80"/>
 
 # StuSync
 
