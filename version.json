@@ -1,6 +1,6 @@
 {
-  "latest_version": "1.2.5",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/stable_v1.2.5%2B17/stable_v1.2.5+17.zip",
+  "latest_version": "1.2.6",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/Stable_v1.2.6%2B18/Stable_v1.2.6+18.zip",
   "changelog": "🎓 Stable Version, Check Release note for change logs",
    "critical": true
 }
