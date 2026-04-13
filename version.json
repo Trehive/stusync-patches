@@ -1,6 +1,6 @@
 {
   "latest_version": "2.0.0+19",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/stable_v2.0.0%2B19/stable_v2.0.0+19.zip",
+  "patch_url": "https://github.com/Trehive/stusync-patches/releases/download/stable_v2.0.0%2B19/stable_2.0.0+19.zip",
   "changelog": "🚀 Major UI Overhaul: Optimized for 13.5\" screens, recovered ~150px vertical space, and critical Nepali billing date fixes.",
   "critical": true
 }
