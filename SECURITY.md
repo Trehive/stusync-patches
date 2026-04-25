@@ -4,22 +4,38 @@
 
 | Version | Supported |
 |---------|-----------|
-| v1.2.x  | ✅ Active support |
-| v1.1.x  | ⚠️ Critical fixes only |
-| < v1.1  | ❌ No longer supported |
+| v2.0.x  | ✅ Active support |
+| v1.2.x  | ⚠️ Critical fixes only |
+| < v1.2  | ❌ No longer supported |
+
+---
+
+## Security Features
+
+| Feature | Protection |
+|---------|------------|
+| **SQLCipher** | AES-256 encrypted local database |
+| **Hardware Lock** | License bound to machine UUID |
+| **Supabase RLS** | Row-level security policies |
+| **Device Registry** | Server-controlled device management |
+| **Audit Trail** | 90-day action logging |
+| **Role-Based Access** | Principal, Admin, Staff permissions |
+
+---
 
 ## Reporting a Vulnerability
 
-StuSync handles sensitive student and institutional data. We take security seriously.
+StuSync handles sensitive student and institutional data. **Do not open public issues** for security vulnerabilities.
 
-**Please do not open a public GitHub issue for security vulnerabilities.**
-
-Report security issues privately to:
+**Report privately to:**
 - 📧 **Email:** trehiveofficial@gmail.com
-- Subject line: `[SECURITY] Brief description`
+- 📝 **Subject:** `[SECURITY] Brief description`
 
-We aim to acknowledge reports within **48 hours** and resolve confirmed
-vulnerabilities within **14 days** depending on severity.
+**Response times:**
+- Acknowledge: within 48 hours
+- Fix: within 14 days (depending on severity)
+
+---
 
 ## Scope
 
@@ -27,3 +43,7 @@ vulnerabilities within **14 days** depending on severity.
 - Unauthorized access to student or financial data
 - Database encryption weaknesses
 - Sync/cloud data exposure vulnerabilities
+
+---
+
+*© 2024–2026 Trehive*

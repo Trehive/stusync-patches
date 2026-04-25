@@ -8,7 +8,8 @@
 
 [![Latest Release](https://img.shields.io/github/v/release/Trehive/stusync-patches?style=flat-square&color=2d6a4f&label=Latest)](https://github.com/Trehive/stusync-patches/releases/latest)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](https://github.com/Trehive/stusync-patches/releases/latest)
-[![License](https://img.shields.io/badge/License-Enterprise-c0392b?style=flat-square)](mailto:trehiveofficial@gmail.com)
+[![Made in Nepal](https://img.shields.io/badge/Made_in-Nepal-1DA1F2?style=flat-square)](https://github.com/Trehive/stusync-patches)
+[![Supabase](https://img.shields.io/badge/Backend-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=3FCF8E)](https://supabase.com)
 
 *From student admissions to fee collection, staff tracking, and live campus monitoring — all in one app, even without internet.*
 
@@ -18,157 +19,94 @@
 
 > [!IMPORTANT]
 > **Enterprise License Required**
-> StuSync requires a **Hardware-Linked License Key** and verified administrator credentials.
+> StuSync requires a **Hardware-Linked License Key**.
 > Contact **[trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com)** or visit **[stusync.trehive.com](https://stusync.trehive.com)** to get started.
+
+---
+
+## Quick Links
+
+| Resource | Link |
+|----------|------|
+| 📖 [Features](./docs/FEATURES.md) | Full module breakdown |
+| 📥 [Installation](./docs/INSTALL.md) | Setup guide |
+| 💰 [Pricing](./docs/PRICING.md) | Investment plans |
+| 🔒 [Security Policy](./SECURITY.md) | Security details |
+| 🐛 [Issues](https://github.com/Trehive/stusync-patches/issues) | Report bugs |
 
 ---
 
 ## What is StuSync?
 
-StuSync is a desktop school management system built for real schools — small or large. It works **fully offline**, syncs to the cloud when connected, and handles every corner of school operations in one place.
+StuSync is a comprehensive school management system for Nepal — handling every aspect of school administration in one secure, offline-first desktop application.
 
-> **No internet? Still works.** Data stays local, syncs automatically when you're back online.
-
-### Core Modules
-
-| Module | What it does |
-|--------|-------------|
-| 🎓 **Registry** | Student & staff profiles, admissions, transfers |
-| 📚 **Academics** | Subjects, grading scales, marks entry, report cards |
-| 💰 **Finance** | Fee billing, invoicing, expense tracking, due reports |
-| 📡 **Cloud Sync** | Multi-device sync with conflict resolution (Supabase) |
-| 🚌 **Transport** | Bus routes, stop management, fleet monitoring |
-| 🔒 **Licensing** | Hardware-linked keys, device registry security |
-| 📷 **CCTV** | Live feed integration, secondary dashboard |
+- 🎓 **Registry** — Students, staff, admissions, transfers
+- 📚 **Academics** — Marks, exams, grading, certificates  
+- 💰 **Finance** — Fee billing, expenses, payroll
+- 🚌 **Transport** — Routes, fleet, GPS monitoring
+- 📷 **CCTV** — Live camera feeds
+- ☁️ **Cloud Sync** — Supabase-backed sync
 
 ---
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](assets/screenshots/dashboard.png)
-*Live stats — active students, today's collections, staff on duty, and attendance at a glance.*
-
-### Financial Overview
-![Finance](assets/screenshots/finance.png)
-*Monthly collection vs expenses, fee collection status, and category breakdowns.*
-
-### Registry Statistics
-![Registry](assets/screenshots/registry.png)
-*Student distribution by grade and gender, admission activity, section breakdown.*
-
-### Progress Reports
-![Report](assets/screenshots/report.png)
-*Auto-generated marksheets with GPA, grade, attendance, and principal signature.*
-
-### Transport & Fleet
-![Transport](assets/screenshots/transport.png)
-*Route visualization and fleet monitoring across all school buses.*
-
-### Grade & Class Settings
-![Grading](assets/screenshots/grading.png)
-*Grading scale setup — define GPA ranges, symbols, and bulk-manage entries.*
+| Module | Description |
+|--------|-------------|
+| ![Dashboard](assets/screenshots/dashboard.png) | Dashboard — Live stats, today's collections |
+| ![Finance](assets/screenshots/finance.png) | Finance — Collections, due reports |
+| ![Registry](assets/screenshots/registry.png) | Registry — Student distribution |
+| ![Report](assets/screenshots/report.png) | Reports — Marksheets with signatures |
+| ![Transport](assets/screenshots/transport.png) | Transport — Fleet monitoring |
+| ![Grading](assets/screenshots/grading.png) | Academics — Grading scales |
 
 ---
 
 ## Current Release
 
-### v1.2.5+17 — Security & Stability
-
-> Critical security enhancements to parent and staff portals, plus performance improvements across the platform.
+### v2.0.2 — Official Launch
 
 | Property | Value |
 |----------|-------|
-| Version | `v1.2.5+17` |
-| Platform | Windows (Desktop) |
-| Database Schema | `v4` |
+| Version | `v2.0.2` |
+| Platform | Windows Desktop (x64) |
+| Database | SQLite + SQLCipher |
 | Release Date | April 2026 |
 
-**Highlights**
-- 🔐 Supabase RLS overhaul — all sensitive tables now use secure RPC functions
-- 🔑 Parent & staff portals: no more anonymous data access
-- 🗄️ SQLCipher DLL fully bundled — encrypted DB works across all Windows machines
-- 📊 Bulk import system with preview dialog and validation
-- ✍️ Principal auto-signature on all generated reports
-- 🔄 Improved sync conflict resolution for multi-device scenarios
+**What's New:**
+- 🚀 Complete Flutter rebuild
+- 🔐 Enterprise security (AES-256, hardware lock)
+- ☁️ Cloud sync with Supabase
+- 📱 All core modules included
 
-[→ View Full Release Notes](https://github.com/Trehive/stusync-patches/releases/latest)
-
----
-
-## Release History
-
-| Version | Highlights |
-|---------|-----------|
-| `v1.2.5+17` | Security overhaul, RLS policies, bulk import, auto-signature |
-| `v1.1.5+10` | Staff assignment, subject ordering, bulk class operations, sync hardening |
-| `v1.1.4+9` | Unique constraints, duplicate prevention, smart sync |
-| `v1.1.0+5` | CCTV integration, hardware licensing, secondary dashboard |
+[📝 Release Notes](https://github.com/Trehive/stusync-patches/releases/latest)
 
 ---
 
 ## Installation
 
-### Fresh Install
-
-1. Download `stusync_v1.2.5+17.zip` from [Releases](https://github.com/Trehive/stusync-patches/releases/latest)
-2. Extract to your preferred folder
+1. Download `stusync_v2.0.2.zip` from [Releases](https://github.com/Trehive/stusync-patches/releases/latest)
+2. Extract to folder
 3. Run `stusync.exe`
-4. Enter your **Institution License Key** on first launch
-5. Log in with administrator credentials
+4. Enter **License Key** (provided by Trehive)
+5. Create admin credentials
 
-### Upgrading
-
-1. Download `update.patch` from [Releases](https://github.com/Trehive/stusync-patches/releases/latest)
-2. Run `updater.exe` — patch applies automatically
-3. The app will auto-migrate the database on first launch
-4. Run a **Full Sync** after upgrading
-
-> [!WARNING]
-> Back up your database before upgrading. The app will prompt you, but manual backups are recommended for large deployments.
+[📖 Full Installation Guide](./docs/INSTALL.md)
 
 ---
 
-## For Trehive Team — Publishing an Update
-
-1. Generate `update.patch` by diffing the new build against the previous one
-
-2. Update `version.json`:
-```json
-{
-  "latest_version": "1.2.5+17",
-  "changelog": "Security overhaul, RLS policies, bulk import",
-  "patch_url": "https://github.com/Trehive/stusync-patches/releases/latest/download/update.patch"
-}
-```
-
-3. Draft a new GitHub Release:
-   - Tag: `v1.2.5+17`
-   - Attach `update.patch` and `updater.exe`
-   - Paste release notes and publish
-
----
-
-## Direct Links
-
-| Resource | URL |
-|----------|-----|
-| Version Check | `https://raw.githubusercontent.com/Trehive/stusync-patches/main/version.json` |
-| Latest Patch | `.../releases/latest/download/update.patch` |
-| Latest Installer | `.../releases/latest/download/updater.exe` |
-
----
-
-## Contact & Licensing
+## Contact
 
 | Channel | Details |
 |---------|---------|
 | 📧 Email | [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) |
 | 🌐 Website | [stusync.trehive.com](https://stusync.trehive.com) |
-| 🐛 Issues | [Open an issue](https://github.com/Trehive/stusync-patches/issues) |
+| 📞 Phone | +977-9741802381 |
 
 ---
 
 <div align="center">
-<sub>© 2024–2026 Trehive · StuSync is proprietary software · All rights reserved · All assets, screenshots, and branding are property of Trehive</sub>
+
+*© 2024–2026 Trehive · Built in Nepal for Nepal*
+
 </div>
