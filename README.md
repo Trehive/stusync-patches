@@ -1,112 +1,131 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Trehive/stusync-patches/main/assets/screenshots/logo.png" alt="StuSync Logo" width="80"/>
+![StuSync](./assets/banners/banner-readme.svg)
 
-# StuSync
+[![Latest Release](https://img.shields.io/github/v/release/Trehive/stusync-patches?style=flat-square&color=2D6A4F&label=Latest)](https://github.com/Trehive/stusync-patches/releases/latest)
+[![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-2D6A4F?style=flat-square&logo=windows&logoColor=white)](https://github.com/Trehive/stusync-patches/releases/latest)
+[![Made in Nepal](https://img.shields.io/badge/Made%20in-Nepal-2D6A4F?style=flat-square)](https://stusync.trehive.com)
+[![License](https://img.shields.io/badge/License-Proprietary-1B4332?style=flat-square)](./LICENSE)
 
-**Offline-First School Management for Windows**
+*Student admissions · Fee collection · Staff payroll · Exams · Transport · Campus security — one app, fully offline.*
 
-[![Latest Release](https://img.shields.io/github/v/release/Trehive/stusync-patches?style=flat-square&color=2d6a4f&label=Latest)](https://github.com/Trehive/stusync-patches/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](https://github.com/Trehive/stusync-patches/releases/latest)
-[![Made in Nepal](https://img.shields.io/badge/Made_in-Nepal-1DA1F2?style=flat-square)](https://github.com/Trehive/stusync-patches)
-[![Supabase](https://img.shields.io/badge/Backend-Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=3FCF8E)](https://supabase.com)
-
-*From student admissions to fee collection, staff tracking, and live campus monitoring — all in one app, even without internet.*
+[**Download**](https://github.com/Trehive/stusync-patches/releases/latest) · [Features](./docs/FEATURES.md) · [Installation](./docs/INSTALL.md) · [Pricing](./docs/PRICING.md) · [Website](https://stusync.trehive.com)
 
 </div>
 
 ---
 
 > [!IMPORTANT]
-> **Enterprise License Required**
-> StuSync requires a **Hardware-Linked License Key**.
-> Contact **[trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com)** or visit **[stusync.trehive.com](https://stusync.trehive.com)** to get started.
-
----
-
-## Quick Links
-
-| Resource | Link |
-|----------|------|
-| 📖 [Features](./docs/FEATURES.md) | Full module breakdown |
-| 📥 [Installation](./docs/INSTALL.md) | Setup guide |
-| 💰 [Pricing](./docs/PRICING.md) | Investment plans |
-| 🔒 [Security Policy](./SECURITY.md) | Security details |
-| 🐛 [Issues](https://github.com/Trehive/stusync-patches/issues) | Report bugs |
+> **A hardware-linked license key is required to run StuSync.**
+> Contact [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) or visit [stusync.trehive.com](https://stusync.trehive.com) to get started.
 
 ---
 
 ## What is StuSync?
 
-StuSync is a comprehensive school management system for Nepal — handling every aspect of school administration in one secure, offline-first desktop application.
+StuSync is a comprehensive school management system built exclusively for Nepal's educational institutions. It handles every dimension of school administration — in a single, secure, offline-first desktop application.
 
-- 🎓 **Registry** — Students, staff, admissions, transfers
-- 📚 **Academics** — Marks, exams, grading, certificates  
-- 💰 **Finance** — Fee billing, expenses, payroll
-- 🚌 **Transport** — Routes, fleet, GPS monitoring
-- 📷 **CCTV** — Live camera feeds
-- ☁️ **Cloud Sync** — Supabase-backed sync
+No internet required for daily operations. No cloud dependency. No compromise on security.
+
+| Module | What it covers |
+|--------|---------------|
+| 🎓 **Registry** | Students, staff, admissions, transfers, live enrollment analytics |
+| 💰 **Finance** | Fee billing, payments, scholarships, expenses, due alerts |
+| 📚 **Academics** | Marks entry, GPA grading, report cards, 9 certificate templates |
+| 👨‍💼 **Staff & Payroll** | Attendance, leave management, automated salary calculations |
+| 🚌 **Transport** | Routes, fleet, student assignment, offline GPS map |
+| 📷 **CCTV** | Live DVR/IP camera feeds, multi-monitor dashboard |
+| ☁️ **Cloud Sync** | Supabase-backed smart sync when internet is available |
+| 🔒 **Security** | AES-256 encryption, hardware licensing, 90-day audit trail |
 
 ---
 
 ## Screenshots
 
-| Module | Description |
-|--------|-------------|
-| ![Dashboard](assets/screenshots/dashboard.png) | Dashboard — Live stats, today's collections |
-| ![Finance](assets/screenshots/finance.png) | Finance — Collections, due reports |
-| ![Registry](assets/screenshots/registry.png) | Registry — Student distribution |
-| ![Report](assets/screenshots/report.png) | Reports — Marksheets with signatures |
-| ![Transport](assets/screenshots/transport.png) | Transport — Fleet monitoring |
-| ![Grading](assets/screenshots/grading.png) | Academics — Grading scales |
+| Dashboard | Finance | Registry |
+|-----------|---------|----------|
+| ![Dashboard](assets/screenshots/dashboard.png) | ![Finance](assets/screenshots/finance.png) | ![Registry](assets/screenshots/registry.png) |
+
+| Report Cards | Transport | Grading |
+|-------------|-----------|---------|
+| ![Reports](assets/screenshots/report.png) | ![Transport](assets/screenshots/transport.png) | ![Grading](assets/screenshots/grading.png) |
 
 ---
 
-## Current Release
+## Current Release — v2.0.2
 
-### v2.0.2 — Official Launch
+| Property | Details |
+|----------|---------|
+| Version | `v2.0.2` · Stable |
+| Platform | Windows 10 / 11 (64-bit) |
+| Framework | Flutter |
+| Database | SQLite + SQLCipher (AES-256) |
+| Cloud | Supabase |
+| Released | April 2026 |
 
-| Property | Value |
-|----------|-------|
-| Version | `v2.0.2` |
-| Platform | Windows Desktop (x64) |
-| Database | SQLite + SQLCipher |
-| Release Date | April 2026 |
+**What's new in v2:**
+- Complete Flutter rebuild — faster, more reliable
+- AES-256 hardware-bound encryption
+- Supabase cloud sync with conflict resolution
+- All core modules, fully integrated
 
-**What's New:**
-- 🚀 Complete Flutter rebuild
-- 🔐 Enterprise security (AES-256, hardware lock)
-- ☁️ Cloud sync with Supabase
-- 📱 All core modules included
-
-[📝 Release Notes](https://github.com/Trehive/stusync-patches/releases/latest)
+[→ Full release notes](https://github.com/Trehive/stusync-patches/releases/latest)
 
 ---
 
-## Installation
+## Quick Start
 
-1. Download `stusync_v2.0.2.zip` from [Releases](https://github.com/Trehive/stusync-patches/releases/latest)
-2. Extract to folder
-3. Run `stusync.exe`
-4. Enter **License Key** (provided by Trehive)
-5. Create admin credentials
+```
+1. Download  →  stusync_v2.0.2.zip from Releases
+2. Extract   →  to C:\Program Files\StuSync
+3. Launch    →  stusync.exe
+4. Activate  →  enter your license key from Trehive
+5. Configure →  school name, grades, fee structure, staff
+```
 
-[📖 Full Installation Guide](./docs/INSTALL.md)
+[→ Full installation guide](./docs/INSTALL.md)
+
+---
+
+## Documentation
+
+| Doc | Description |
+|-----|-------------|
+| [📋 Features](./docs/FEATURES.md) | Full module breakdown and roadmap |
+| [📥 Installation](./docs/INSTALL.md) | Setup, activation, updates, backup |
+| [💰 Pricing](./docs/PRICING.md) | Annual plans from NPR 40,000/yr |
+| [🔒 Security Policy](./SECURITY.md) | Encryption, licensing, vulnerability reporting |
+
+---
+
+## Why StuSync?
+
+| | StuSync | Typical alternatives |
+|---|---------|---------------------|
+| Works without internet | ✅ Full offline | ❌ Cloud-only |
+| AES-256 local encryption | ✅ Hardware-bound key | ❌ Unencrypted |
+| Hardware-linked license | ✅ Built-in | ❌ Rarely available |
+| CCTV integration | ✅ DVR + IP cameras | ❌ Not available |
+| GPS transport tracking | ✅ Offline map | ⚠️ Paid add-on |
+| Certificate templates | ✅ 9 templates | ⚠️ 1–2 basic |
+| Payroll accuracy | ✅ Attendance-linked | ❌ Manual |
+| Silent auto-updates | ✅ Over-the-air | ❌ Manual reinstall |
 
 ---
 
 ## Contact
 
-| Channel | Details |
-|---------|---------|
-| 📧 Email | [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) |
+| | |
+|---|---|
 | 🌐 Website | [stusync.trehive.com](https://stusync.trehive.com) |
-| 📞 Phone | +977-9741802381 |
+| 📧 Email | [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) |
+| 📞 Phone | +977-9741802381 · +977-9808320338 |
+| 📍 Address | New Baneshwor, Kathmandu, Nepal |
 
 ---
 
 <div align="center">
 
-*© 2024–2026 Trehive · Built in Nepal for Nepal*
+*© 2024–2026 Trehive · Built in Nepal, for Nepal*
 
 </div>

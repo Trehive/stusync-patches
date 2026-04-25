@@ -1,92 +1,86 @@
-# StuSync Installation Guide
+<div align="center">
+
+![StuSync Installation](../assets/banners/banner-install.svg)
+
+[← Back to README](../README.md) · [Features](./FEATURES.md) · [Pricing](./PRICING.md)
+
+</div>
+
+---
 
 ## System Requirements
 
 | Requirement | Minimum | Recommended |
-|--------------|---------|-------------|
+|-------------|---------|-------------|
 | OS | Windows 10 (64-bit) | Windows 11 |
 | RAM | 4 GB | 8 GB |
 | Storage | 10 GB free | 20 GB free |
-| Display | 1280x720 | 1920x1080 |
-| Internet | Optional | 10 Mbps+ for sync |
+| Display | 1280 × 720 | 1920 × 1080 |
+| Internet | Optional | 10 Mbps+ for cloud sync |
 
 ---
 
-## Installation Steps
+## Installation
 
-### 1. Download
+### Step 1 — Download
 
-Download the latest release from:
+Get the latest release from GitHub or the StuSync website:
+
 - **GitHub:** https://github.com/Trehive/stusync-patches/releases/latest
 - **Website:** https://stusync.trehive.com/downloads
 
-### 2. Extract
+Download `stusync_v2.0.2.zip`.
+
+### Step 2 — Extract
 
 ```
-Download: stusync_v2.0.2.zip
-Extract to: C:\Program Files\StuSync  (recommended)
+Extract stusync_v2.0.2.zip to:
+  C:\Program Files\StuSync      ← recommended
 ```
 
-### 3. First Launch
+No installer is required. StuSync runs directly from the extracted folder.
 
-1. Open the StuSync folder
-2. Double-click `stusync.exe`
-3. The app will initialize for first launch
+### Step 3 — Launch
 
-### 4. Activation
+Open the StuSync folder and double-click `stusync.exe`. The app initializes on first launch.
 
-1. **Enter License Key** — Contact Trehive to obtain your institutional license
-2. **Device Registration** — Automatically bound to your machine
-3. **Set Admin Credentials** — Create administrator username/password
-4. **Configure School** — Enter school name, code, academic year
+### Step 4 — Activate
 
-### 5. Initial Setup
+> [!IMPORTANT]
+> A valid license key from Trehive is required. Contact [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) to obtain one.
+
+1. Enter your **license key** when prompted
+2. The app automatically binds to your device (hardware-linked)
+3. Create your **administrator credentials**
+4. Enter your school name, registration code, and academic year
+
+### Step 5 — Initial Setup
 
 - Configure grades and sections
-- Set up fee structure
-- Add staff and students
-- (Optional) Connect to cloud sync
+- Set up fee structure and heads
+- Add staff records
+- Import or add students
+- *(Optional)* Enable cloud sync under Settings
 
 ---
 
-## Upgrading
+## Updating
 
-### Auto-Update (Recommended)
+### Auto-Update *(Recommended)*
 
-1. The app will prompt when an update is available
-2. Click **Update Now**
-3. The app downloads and applies the patch automatically
-4. On first launch, database migrations run automatically
+When a new version is available, StuSync prompts you to update.
+
+1. Click **Update Now** in the prompt
+2. The app downloads and applies the patch in the background
+3. On next launch, database migrations run automatically — no action needed
 
 ### Manual Update
 
-1. Download the latest `stusync_vx.x.x.zip`
+1. Download the latest `stusync_vX.X.X.zip` from [Releases](https://github.com/Trehive/stusync-patches/releases/latest)
 2. Back up your database: `Settings → Backup → Create Backup`
-3. Close the app completely
-4. Extract new files, overwrite existing
-5. Run `stusync.exe`
-6. Database migrates automatically
-
----
-
-## Running the App
-
-### Command Line (Optional)
-
-```batch
-:: Run with custom data folder
-stusync.exe --data-path="D:\MySchoolData"
-
-:: Run with debug logging
-stusync.exe --debug
-```
-
-### Quick Launch
-
-Create a shortcut:
-1. Right-click `stusync.exe`
-2. Send to Desktop (create shortcut)
-3. Double-click shortcut to launch
+3. Close StuSync completely
+4. Extract the new files and overwrite the existing folder
+5. Launch `stusync.exe` — database migrates automatically
 
 ---
 
@@ -94,63 +88,61 @@ Create a shortcut:
 
 ### Manual Backup
 
-**Settings → Backup → Create Backup**
+Go to **Settings → Backup → Create Backup**
 
-Creates an encrypted `.stusync` backup file with:
-- Full database (AES-256 encrypted)
-- All media files
-- Automatic rotation (keeps last 3 backups)
+This creates an encrypted `.stusync` backup file containing:
+- Full AES-256 encrypted database
+- All uploaded media and documents
+- Automatic rotation — keeps last 3 backups
 
 ### Auto-Backup
 
-The app automatically creates backups:
-- Daily (if connected)
+StuSync creates backups automatically:
+- Daily, when the app is running and connected
 - Before every update
 
-### Restore from Backup
+### Restore
 
-**Settings → Backup → Restore**
+Go to **Settings → Backup → Restore**, select your backup file, and confirm. The app restarts with restored data.
 
-1. Select backup file
-2. Confirm restore
-3. App restarts with restored data
+> [!WARNING]
+> Always move backup files to external storage (USB drive, external hard disk). Trehive is not responsible for backup files lost due to device failure, formatting, or accidental deletion.
+
+---
+
+## Command Line Options *(Advanced)*
+
+```batch
+:: Use a custom data directory
+stusync.exe --data-path="D:\SchoolData"
+
+:: Enable debug logging
+stusync.exe --debug
+```
 
 ---
 
 ## Troubleshooting
 
-### "License Not Found"
-
-- Verify your license key is correct
-- Contact Trehive if license is lost
-
-### "Device Not Registered"
-
-- Contact Trehive to register your device
-- Provide your machine ID (shown in error)
-
-### "Database Corrupted"
-
-- Restore from backup
-- If no backup, contact Trehive support
-
-### "Sync Failed"
-
-- Check internet connection
-- Verify Supabase credentials
-- Try manual sync later
+| Error | Resolution |
+|-------|-----------|
+| `License Not Found` | Verify your key is correct. Contact Trehive if lost. |
+| `Device Not Registered` | Contact Trehive with your machine ID (shown in the error). |
+| `Database Corrupted` | Restore from backup. If no backup exists, contact support. |
+| `Sync Failed` | Check internet connection. Try manual sync later via Settings. |
+| `Clock Tamper Detected` | System clock was moved backward — a security check. Contact Trehive. |
 
 ---
 
-## Uninstallation
+## Uninstalling
 
-1. **Back up your data** (very important!)
-2. Delete the StuSync folder
-3. Delete `%APPDATA%\StuSync` (optional)
-4. Remove any shortcuts
+> [!CAUTION]
+> Always back up your data before uninstalling. Data not backed up or synced to cloud will be permanently lost.
 
-> [!WARNING]
-> Uninstalling without backing up your data will result in permanent data loss. Always create a backup before uninstalling.
+1. Create a backup: `Settings → Backup → Create Backup`
+2. Delete the StuSync application folder
+3. *(Optional)* Delete `%APPDATA%\StuSync` to remove app data
+4. Remove any desktop shortcuts
 
 ---
 
@@ -158,10 +150,16 @@ The app automatically creates backups:
 
 | Channel | Details |
 |---------|---------|
-| Email | trehiveofficial@gmail.com |
+| Email | [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) |
 | Phone | +977-9741802381 |
-| Website | https://stusync.trehive.com/support |
+| Website | [stusync.trehive.com/support](https://stusync.trehive.com/support) |
 
 ---
 
+<div align="center">
+
+[← Back to README](../README.md) · [Features](./FEATURES.md) · [Pricing →](./PRICING.md)
+
 *© 2024–2026 Trehive*
+
+</div>

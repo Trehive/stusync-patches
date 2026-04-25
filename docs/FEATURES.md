@@ -1,96 +1,118 @@
-# StuSync Features
+<div align="center">
 
-## Overview
+![StuSync Features](../assets/banners/banner-features.svg)
 
-StuSync is a comprehensive, offline-first school management system built specifically for Nepal's educational institutions. It handles every aspect of school administration — from admissions to finance, exams to transport — in a single, secure application.
+[← Back to README](../README.md) · [Installation](./INSTALL.md) · [Pricing](./PRICING.md)
+
+</div>
 
 ---
 
 ## Core Modules
 
-### 🎓 Registry (Student & Staff)
+### 🎓 Registry — Student & Staff
 
-- **Student Profiles** — Full admissions data, photos, guardian contacts, emergency info, document storage
-- **Staff Records** — Qualifications, contracts, attendance history, leave tracking
-- **Admissions** — Digital admission forms, enrollment tracking
-- **Transfers** — Student transfer requests and processing
-- **Live Analytics** — Real-time enrollment statistics by grade, gender, section
+Complete institutional records, always at your fingertips.
 
-### 📚 Academics (Exams & Marks)
+**Students**
+- Full admission profiles — photos, guardian contacts, emergency info, document storage
+- Digital admission forms and enrollment tracking
+- Transfer requests and processing
+- Live enrollment analytics by grade, gender, and section
 
-- **Subject Management** — Subjects per grade/section, teacher assignments
-- **Grading Scales** — Customizable GPA ranges, symbols, credit hours
-- **Marks Entry** — Bulk import via CSV, per-student entry, class-wise entry
-- **Report Cards** — Auto-generated marksheets with GPA calculation
-- **Examinations** — Exam schedules, seating plans, admit cards
-- **Certificates** — 9 professional templates (TC, character, bonafide, etc.)
-
-### 💰 Finance
-
-- **Fee Structure** — Class-wise fee setup, multiple heads
-- **Invoicing** — Auto-generated fee bills, receipts
-- **Payments** — Cash, bank, mobile payment tracking
-- **Scholarships** — Automatic discounts, waiver management
-- **Due Reports** — Automated due alerts
-- **Expenses** — Expenditure tracking, category-wise reports
-- **Wallet System** — Staff advances, salary deductions
-
-### 🚌 Transport
-
-- **Routes & Stops** — Define routes, assign stops, pickup points
-- **Fleet Management** — Bus assignment, capacity tracking
-- **GPS Monitoring** — Live map visualization (offline cached)
-- **Student Assignment** — Per-student bus/stop assignment
-
-### 📷 CCTV & Dashboard
-
-- **Live Camera Feeds** — DVR/IP camera integration
-- **Secondary Dashboard** — Multi-monitor support
-- **Real-time Stats** — Live student count, today's attendance, collections
-
-### 👨‍💼 Staff Management
-
-- **Attendance** — Daily mark-in/mark-out, class-wise trends
-- **Leave Management** — Leave requests, approval workflow
-- **Payroll** — PL/LWP auto-calculation from attendance
-- **Performance** — Staff ranking, evaluation tracking
-
-### ☁️ Cloud Sync (Supabase)
-
-- **Offline-First** — Works without internet
-- **Smart Sync** — Only syncs changed data
-- **Conflict Resolution** — Preserves data integrity
-- **Multi-Device** — Sync across devices
-
-### 🔒 Security & Licensing
-
-- **Hardware-Linked License** — Machine-specific activation
-- **Device Registry** — Track authorized devices
-- **SQLCipher Encryption** — AES-256 local DB encryption
-- **Role-Based Access** — Principal, Admin, Staff permissions
-- **90-Day Audit Trail** — Every action logged
-- **Server-Side Validation** — Supabase RLS policies
+**Staff**
+- Qualification records, contracts, attendance history, leave tracking
+- Role-based access tied to staff profiles
 
 ---
 
-## Additional Features
+### 💰 Finance
 
-### Parent Portal (Web)
-- View child's attendance, marks, fee status
-- Online fee payment integration
-- Real-time notifications
+Stop the leakage. Full visibility into every rupee.
 
-### Mobile App (Coming Soon)
-- Android & iOS for parents/students
-- Attendance, marks, notices access
+- **Fee structure** — class-wise fee heads, custom configurations
+- **Invoicing** — auto-generated bills and receipts on every payment
+- **Scholarships** — automatic discounts and waiver management
+- **Due alerts** — outstanding dues flagged automatically, no manual chasing
+- **Expenses** — expenditure tracking, category-wise reports
+- **Wallet system** — staff advances and salary deductions
+- **Reports** — income/expenditure summaries, collection analytics
 
-### GPS Live Tracking (In Development)
-- Real-time bus location
-- Parent alerts
+---
 
-### Advanced Analytics (Planned)
-- AI-powered trend forecasting
-- Enrollment, attendance, performance predictions
+### 📚 Academics — Exams & Marks
+
+From marks entry to printed certificates, fully automated.
+
+- **Subjects** — per grade/section management, teacher assignments
+- **Grading scales** — customizable GPA ranges, symbols, credit hours
+- **Marks entry** — bulk CSV import, per-student or class-wise entry
+- **Report cards** — auto-generated marksheets with GPA calculation
+- **Exam schedules** — timetables, seating plans, admit cards
+- **Certificates** — 9 professionally designed templates (TC, character, bonafide, and more), PDF export in one click
+
+---
+
+### 👨‍💼 Staff Management & Payroll
+
+Payroll that trusts data, not memory.
+
+- **Attendance** — daily mark-in/mark-out, class-wise trend charts
+- **Leave management** — request workflow, approval tracking
+- **Payroll** — automatic PL/LWP calculation from attendance data
+- **Performance** — staff ranking and evaluation tracking
+- Every calculation logged in the 90-day audit trail
+
+---
+
+### 🚌 Transport & GPS
+
+Complete visibility over your fleet — even without internet.
+
+- **Routes & stops** — define routes, assign pickup points
+- **Fleet management** — bus assignment, capacity tracking
+- **Student assignment** — per-student bus and stop records
+- **Offline GPS map** — live fleet visualization using cached map tiles, no connectivity required
+
+---
+
+### 📷 CCTV & Dashboard
+
+Bring your campus security into StuSync.
+
+- **Live camera feeds** — DVR and IP camera integration
+- **Secondary dashboard** — multi-monitor support for reception/admin desks
+- **Real-time stats** — live student count, today's attendance, collections at a glance
+
+> [!NOTE]
+> StuSync provides the viewer interface only. Cameras and recording hardware remain the school's property and responsibility. No CCTV data is stored on StuSync servers.
+
+---
+
+### ☁️ Cloud Sync
+
+Offline-first — but smarter when you're online.
+
+- **Offline-first** — full operations without internet, always
+- **Smart sync** — only changed data is transmitted, not full snapshots
+- **Conflict resolution** — last-write-wins with timestamp logic preserving data integrity
+- **Multi-device** — sync across licensed devices on the same plan
+- **Row-level security** — Supabase RLS ensures each school's data is fully isolated
+
+---
+
+### 🔒 Security & Licensing
+
+Enterprise-grade protection for sensitive institutional data.
+
+| Feature | Protection |
+|---------|-----------|
+| **SQLCipher** | AES-256 encrypted local database, hardware-bound key |
+| **Hardware lock** | License tied to machine UUID — prevents unauthorized use |
+| **Role-based access** | Principal, Admin, Staff — granular permission layers |
+| **Audit trail** | 90-day log of every action, with timestamp and user identity |
+| **Supabase RLS** | Cloud-side row-level security, no cross-school data access |
+| **Encrypted sync** | All sync traffic encrypted end-to-end |
 
 ---
 
@@ -98,21 +120,35 @@ StuSync is a comprehensive, offline-first school management system built specifi
 
 | Property | Value |
 |----------|-------|
-| Platform | Windows Desktop (x64) |
+| Platform | Windows 10 / 11 (64-bit) |
 | Framework | Flutter |
 | Database | SQLite + SQLCipher |
-| Cloud | Supabase |
+| Cloud backend | Supabase |
 | Encryption | AES-256 |
-| License | Hardware-bound |
+| License | Hardware-bound per institution |
+| Updates | Over-the-air, silent background patches |
 
 ---
 
-## Documentation
+## Roadmap
 
-- [Installation Guide](./INSTALL.md)
-- [Pricing Plans](./PRICING.md)
-- [Security Policy](../SECURITY.md)
+Features currently in development or planned:
+
+| Feature | Status |
+|---------|--------|
+| Mobile app (Android & iOS) | 🔨 Coming soon |
+| Parent portal (web dashboard) | 🎨 In design |
+| GPS live tracking for parents | 🔨 In development |
+| Automated absence alerts | 📋 Planned |
+| AI-powered analytics & forecasting | 📋 Planned |
+| Multi-school super-admin dashboard | 🗺️ Roadmap |
 
 ---
+
+<div align="center">
+
+[← Back to README](../README.md) · [Installation →](./INSTALL.md)
 
 *© 2024–2026 Trehive*
+
+</div>

@@ -1,49 +1,69 @@
-# Security Policy
+<div align="center">
 
-## Supported Versions
+![StuSync Security Policy](./assets/banners/banner-security.svg)
 
-| Version | Supported |
-|---------|-----------|
-| v2.0.x  | ✅ Active support |
-| v1.2.x  | ⚠️ Critical fixes only |
-| < v1.2  | ❌ No longer supported |
+[← Back to README](./README.md)
+
+</div>
 
 ---
 
-## Security Features
+## Supported Versions
 
-| Feature | Protection |
-|---------|------------|
-| **SQLCipher** | AES-256 encrypted local database |
-| **Hardware Lock** | License bound to machine UUID |
-| **Supabase RLS** | Row-level security policies |
-| **Device Registry** | Server-controlled device management |
-| **Audit Trail** | 90-day action logging |
-| **Role-Based Access** | Principal, Admin, Staff permissions |
+| Version | Support status |
+|---------|---------------|
+| `v2.0.x` | ✅ Active — all patches |
+| `v1.2.x` | ⚠️ Critical fixes only |
+| `< v1.2` | ❌ End of life — upgrade required |
+
+---
+
+## Security Architecture
+
+StuSync handles some of the most sensitive personal data in any community — children's identities, family contacts, financial records. Every layer of the system is designed with that responsibility in mind.
+
+| Layer | Protection |
+|-------|-----------|
+| **SQLCipher** | AES-256 encrypted local database. Encryption key is hardware-bound — data on one device is cryptographically inaccessible from another. |
+| **Hardware lock** | Each license is bound to a specific machine UUID. Prevents unauthorized installation, copying, or data exfiltration. |
+| **Role-based access** | Principal, Admin, and Staff roles carry granular permission layers. Sensitive records are visible only to authorized roles. |
+| **90-day audit trail** | Every action logged with timestamp and user identity. Full accountability built into the architecture. |
+| **Supabase RLS** | Row-level security policies at the cloud layer — each school's data is completely isolated. No cross-school data access is possible. |
+| **Encrypted sync** | All synchronization traffic is encrypted end-to-end. |
 
 ---
 
 ## Reporting a Vulnerability
 
-StuSync handles sensitive student and institutional data. **Do not open public issues** for security vulnerabilities.
+StuSync handles sensitive student and institutional data. **Please do not open public GitHub issues for security vulnerabilities.**
 
-**Report privately to:**
-- 📧 **Email:** trehiveofficial@gmail.com
-- 📝 **Subject:** `[SECURITY] Brief description`
+**Report privately:**
 
-**Response times:**
-- Acknowledge: within 48 hours
-- Fix: within 14 days (depending on severity)
+- 📧 **Email:** [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com)
+- 📝 **Subject line:** `[SECURITY] Brief description of the issue`
+
+**Response commitments:**
+- Acknowledgement within **48 hours**
+- Fix or mitigation within **14 days** (depending on severity)
 
 ---
 
 ## Scope
 
-- Authentication and license validation bypass
-- Unauthorized access to student or financial data
+Reports are welcomed for:
+
+- Authentication or license validation bypass
+- Unauthorized access to student, staff, or financial data
 - Database encryption weaknesses
-- Sync/cloud data exposure vulnerabilities
+- Cloud sync or Supabase data exposure vulnerabilities
+- Hardware license check bypasses
 
 ---
 
+<div align="center">
+
+[← Back to README](./README.md)
+
 *© 2024–2026 Trehive*
+
+</div>
