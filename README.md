@@ -21,14 +21,14 @@
 
 ---
 
-## What is StuSync?
+## 🚀 What is StuSync?
 
 StuSync is a comprehensive school management system built exclusively for Nepal's educational institutions. It handles every dimension of school administration — in a single, secure, offline-first desktop application.
 
-No internet required for daily operations. No cloud dependency. No compromise on security.
+**No internet required for daily operations. No cloud dependency. No compromise on security.**
 
 | Module | What it covers |
-|--------|---------------|
+| :--- | :--- |
 | 🎓 **Registry** | Students, staff, admissions, transfers, live enrollment analytics |
 | 💰 **Finance** | Fee billing, payments, scholarships, expenses, due alerts |
 | 📚 **Academics** | Marks entry, GPA grading, report cards, 9 certificate templates |
@@ -40,43 +40,43 @@ No internet required for daily operations. No cloud dependency. No compromise on
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 | Dashboard | Finance | Registry |
-|-----------|---------|----------|
+|:---:|:---:|:---:|
 | ![Dashboard](assets/screenshots/dashboard.png) | ![Finance](assets/screenshots/finance.png) | ![Registry](assets/screenshots/registry.png) |
 
 | Report Cards | Transport | Grading |
-|-------------|-----------|---------|
+|:---:|:---:|:---:|
 | ![Reports](assets/screenshots/report.png) | ![Transport](assets/screenshots/transport.png) | ![Grading](assets/screenshots/grading.png) |
 
 ---
 
-## Current Release — v2.0.2
+## 📦 Current Release — v2.0.6+25
 
 | Property | Details |
-|----------|---------|
-| Version | `v2.0.2` · Stable |
-| Platform | Windows 10 / 11 (64-bit) |
-| Framework | Flutter |
-| Database | SQLite + SQLCipher (AES-256) |
-| Cloud | Supabase |
-| Released | April 2026 |
+| :--- | :--- |
+| **Version** | `v2.0.6+25` · Stable |
+| **Platform** | Windows 10 / 11 (64-bit) |
+| **Framework** | Flutter |
+| **Database** | SQLite + SQLCipher (AES-256) |
+| **Cloud** | Supabase |
+| **Released** | May 2026 |
 
-**What's new in v2:**
-- Complete Flutter rebuild — faster, more reliable
-- AES-256 hardware-bound encryption
-- Supabase cloud sync with conflict resolution
-- All core modules, fully integrated
+**What's new in v2.0.6:**
+- 🛡️ **Security Hardening:** Enhanced license verification and fail-closed security guards.
+- 📉 **Due Report Stability:** Fixed critical crashes during PDF exports and added diagnostic auditing.
+- 🎨 **UI Polish:** Improved sidebar behavior in Fee Billing and streamlined print workflows.
+- 🚀 **Performance:** General stability refinements across all core modules.
 
 [→ Full release notes](https://github.com/Trehive/stusync-patches/releases/latest)
 
 ---
 
-## Quick Start
+## ⚡ Quick Start
 
-```
-1. Download  →  stusync_v2.0.2.zip from Releases
+```text
+1. Download  →  stusync_v2.0.6+25.zip from Releases
 2. Extract   →  to C:\Program Files\StuSync
 3. Launch    →  stusync.exe
 4. Activate  →  enter your license key from Trehive
@@ -87,10 +87,10 @@ No internet required for daily operations. No cloud dependency. No compromise on
 
 ---
 
-## Documentation
+## 📚 Documentation
 
 | Doc | Description |
-|-----|-------------|
+| :--- | :--- |
 | [📋 Features](./docs/FEATURES.md) | Full module breakdown and roadmap |
 | [📥 Installation](./docs/INSTALL.md) | Setup, activation, updates, backup |
 | [💰 Pricing](./docs/PRICING.md) | Annual plans from NPR 40,000/yr |
@@ -98,10 +98,10 @@ No internet required for daily operations. No cloud dependency. No compromise on
 
 ---
 
-## Why StuSync?
+## 🎯 Why StuSync?
 
-| | StuSync | Typical alternatives |
-|---|---------|---------------------|
+| Feature | StuSync | Typical alternatives |
+| :--- | :---: | :---: |
 | Works without internet | ✅ Full offline | ❌ Cloud-only |
 | AES-256 local encryption | ✅ Hardware-bound key | ❌ Unencrypted |
 | Hardware-linked license | ✅ Built-in | ❌ Rarely available |
@@ -113,14 +113,14 @@ No internet required for daily operations. No cloud dependency. No compromise on
 
 ---
 
-## Contact
+## 📞 Contact
 
-| | |
-|---|---|
-| 🌐 Website | [stusync.trehive.com](https://stusync.trehive.com) |
-| 📧 Email | [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) |
-| 📞 Phone | +977-9741802381 · +977-9808320338 |
-| 📍 Address | New Baneshwor, Kathmandu, Nepal |
+| Channel | Information |
+| :--- | :--- |
+| 🌐 **Website** | [stusync.trehive.com](https://stusync.trehive.com) |
+| 📧 **Email** | [trehiveofficial@gmail.com](mailto:trehiveofficial@gmail.com) |
+| 📞 **Phone** | +977-9741802381 · +977-9808320338 |
+| 📍 **Address** | New Baneshwor, Kathmandu, Nepal |
 
 ---
 
